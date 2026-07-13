@@ -1,0 +1,23 @@
+.container{
+    background-color: yellow;
+    justify-content: space-between;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    width: auto;
+    flex-wrap: wrap;
+    padding:10px;
+    margin: 10px;
+}
+.box{
+    width: auto;
+    height: auto;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.round-border{
+    border-radius: 50px;
+    border: 2px solid blacl;
+}
