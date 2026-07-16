@@ -7,15 +7,32 @@
         width:105px;
         height:36px;
         border: none;
+        transition:opacity 0.15s;
+    }
+    .sus:hover{
+        opacity:0.3;
+    } 
+    .sus:active{
+        opacity:0.8;
+    }
+    .join:hover{
+        background-color:rgb(71, 149, 227);
+        color:white;
+        box-shadow:5px 5px 10px rgba(0,0,0,0.15)
     }
     .join{
         color: rgb(71, 149, 227);
         background-color:white;
         border:2px solid rgb(71, 149, 227);
-        border-radius:20px;
+        border-radius:2px;
         height:36px;
         width: 70px;
-        cursor:pointer;
+        cursor:pointer;  font-weight:bold;
+        margin-left:3px;
+        transition: background-color 0.15s, color 0.15s, box-shadow 0.15s;       
+
+    }.join:active{
+        opacity: 0.7;
 
     }
 </style>
