@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <div id="students"></div>
+
+    <script>
+
+        fetch("students.xml")
+            .then(response => response.text())
+            .then(data => {
+
+                let parser = new DOMParser();
+                let xml = parser.parseFromString(data, "text/xml");
+
+                let students = xml.getElementsByTagName("student");
+
+                for (let student of students) {
+
+                    let name = student.getElementsByTagName("name")[0].textContent;
+                    let age = student.getElementsByTagName("age")[0].textContent;
+                    let course = student.getElementsByTagName("course")[0].textContent;
+
+                    document.getElementById("students").innerHTML +=
+                        "<p>Name: " + name + "</p>" +
+                        "<p>Age: " + age + "</p>" +
+                        "<p>Course: " + course + "</p>" ;
+
+                }
+
+            });
+
+    </script>
+
+</body>
+
+</html>
