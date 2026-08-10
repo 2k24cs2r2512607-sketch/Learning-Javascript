@@ -29,14 +29,16 @@ display:block;
            vertical-align:top;
            margin-right:18px;
         }
-        .channel_picture{
-            display:inline-block;
-            width:50px;
-            vertical-align:top;
-        }
+         
+        .video-info-grid{
+            display:grid;
+            grid-template-columns:50px 1fr;
+
+
+         }
         .video_info{
-            display:inline-block;
-            width:200px;
+             
+            margin-left:5px;
 
         }
         .video-title{
@@ -60,15 +62,16 @@ display:block;
          .video-author{
             margin-bottom:4px;
          }
+          
     </style>
 </head>
 <body>
     <input class="search-bar" type="text" placeholder="Search">
      <div class="video-preview">
         <div class="thumnail-row"><img class="thumbnail" src="D:\FSD\HTML_CSS\thumbnails\thumbnail-1.webp"></div>
-         <div>
-            <div class="channel_picture"><img  class="profile_picture" src="D:\FSD\HTML_CSS\logo\channel-1.jpeg"></div>
-            <div class="video_info"><p class="video-title
+         <div class="video-info-grid">
+            <div class="channel_picture"  ><img  class="profile_picture" src="D:\FSD\HTML_CSS\logo\channel-1.jpeg"></div>
+            <div class="video_info"  ><p class="video-title
     ">Talking Tech   and AI with Google CEO Sundar Pichai!</p>
     <p class="video-author">Marques Browniee</p>
     <p class="video-stats">3.4M views &#183; 6 months ago</p></div>
@@ -79,16 +82,22 @@ display:block;
      
     
      
-
-     <div class="video-preview">
-         
-    <img class="thumbnail" src="D:\FSD\HTML_CSS\thumbnails\thumbnail-2.webp">
-    
-    <p class="video-title
+<div class="video-preview">
+        <div class="thumnail-row"><img class="thumbnail" src="D:\FSD\HTML_CSS\thumbnails\thumbnail-2.webp"></div>
+         <div class="video-info-grid">
+            <div class="channel_picture"  ><img  class="profile_picture" src="D:\FSD\HTML_CSS\logo\channel-2.jpeg"></div>
+            <div class="video_info"  ><p class="video-title
     ">Try Not To Laugh Challenge #9</p>
     <p class="video-author">Markiplier</p>
-    <p class="video-stats">19M views &#183; 4 years ago</p>
+    <p class="video-stats">19M views &#183; 4 years ago</p></div>
+             
+ 
      </div>
+         </div>
+
+
+
+ 
 
 </body>
 </html>
