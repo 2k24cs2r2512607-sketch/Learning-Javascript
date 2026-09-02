@@ -1,0 +1,30 @@
+    <!DOCtype html>
+    <html>
+        <head>
+            <title>Objects</title>
+        </head>
+        <body> 
+           
+
+<script>
+    // Object- An object groups multiple values together
+    const product = {
+        name : 'socks',//name==property(how we access value)
+        price : 2020//property value pair
+        // price : 34
+    };
+    // document.write(typeof product);->Object
+    console.log(product);
+    document.write(product.name);
+    document.write("\n",product.price);
+    product.name = 'cotton socks';//change value
+    document.write(product.name);
+    // document.write(product.name1);->output - undefined
+    product.newproperty=true;
+    document.write(product.newproperty);//creates new property value pair
+    delete product.newproperty;//->delete it 
+
+</script>
+
+        </body>
+    </html>
