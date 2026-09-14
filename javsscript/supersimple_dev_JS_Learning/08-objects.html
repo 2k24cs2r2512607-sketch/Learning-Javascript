@@ -34,6 +34,7 @@
             document.write("Function inside object");//function also types of values
         }
     };
+    // Objects are references
     document.write(product2['name']);
     document.write(product2['name2']);
     //Bracket notation - advantage if property not present it does not give error and get value undefined in output. on the other hand .(dot) notation gives us an error
@@ -47,6 +48,7 @@
     console.log(JSON.stringify(product2));//typeof string
     const jsonstring=JSON.parse(JSON.stringify(product2));
     console.log(jsonstring);
+    const product1=product2;//copy by references they points 
 </script>
 
         </body>
