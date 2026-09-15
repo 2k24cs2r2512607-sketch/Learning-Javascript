@@ -2,20 +2,35 @@
     <html>
         <head>
             <title>DOM projects</title>
+            <style>
+                .subscribe-button{
+                    border:none;
+                    color:white;
+                    background-color:black;
+                    border-radius:20px;
+                    padding:8px;
+                    font-weight:bold;
+                    cursor:pointer;
+                }
+                .is-subscribed{
+                    background-color:rgb(240, 240, 240);
+                    color:black;
+                }
+                 
+                    
+            </style>
         </head>
         <body> 
             <p>YouTube Subscribe Button</p>
             <button
             onclick="
             subscribe();
-            " class="js-subscribe-button">   Subscribe</button>
+            " class="js-subscribe-button subscribe-button">   Subscribe</button>
         <p>Amazon Shipping Calculator</p>
             <input type="number" class="js-cost" placeholder="Cost of Order" onkeydown=" handlecosetkeydown(event);
             ">
-            <!-- Every event listener gets an event object -->
             <button onclick="calculateTotal();
-            // clicks,keydowns=>events
-            // onclick,onkeydown(any value from keyboard)=>event listeners
+             
 
             
             ">Calculate</button>
@@ -46,10 +61,12 @@
         const btnelement = document.querySelector('.js-subscribe-button')
             if (btnelement.innerText==='Subscribe'){
                 btnelement.innerHTML='Subscribed';
+                btnelement.classList.add('is-subscribed'); 
             }
             // innerText removes extra space
             else{
-                btnelement.innerHTML='Subscribe'
+                btnelement.innerHTML='Subscribe';
+                btnelement.classList.remove('is-subscribed');
             }
 
     }
