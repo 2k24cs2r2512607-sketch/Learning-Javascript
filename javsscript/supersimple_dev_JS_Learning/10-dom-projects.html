@@ -3,6 +3,10 @@
         <head>
             <title>DOM projects</title>
             <style>
+                body{
+                    font-family:Arial;
+                }
+                                  
                 .subscribe-button{
                     border:none;
                     color:white;
@@ -11,13 +15,24 @@
                     padding:8px;
                     font-weight:bold;
                     cursor:pointer;
+                    margin-bottom:30px;
                 }
                 .is-subscribed{
                     background-color:rgb(240, 240, 240);
                     color:black;
                 }
-                 
-                    
+                .cost-input{
+                    font-size:15px;
+                    padding:10px;
+                } 
+                 .calculate-button{
+                    color:white;
+                    background-color:rgb(25, 175, 25);
+                    border:none;
+                    font-size:15px;
+                    padding:12px 15px;
+                    cursor:pointer;
+                 }   
             </style>
         </head>
         <body> 
@@ -27,13 +42,13 @@
             subscribe();
             " class="js-subscribe-button subscribe-button">   Subscribe</button>
         <p>Amazon Shipping Calculator</p>
-            <input type="number" class="js-cost" placeholder="Cost of Order" onkeydown=" handlecosetkeydown(event);
-            ">
+            <input type="number" class="js-cost cost-input" placeholder="Cost of Order" onkeydown="handlecosetkeydown(event);
+            "  >
             <button onclick="calculateTotal();
              
 
             
-            ">Calculate</button>
+            " class="calculate-button">Calculate</button>
             <p class="js-total-cost"></p>
          
 <script>
