@@ -10,7 +10,7 @@
             <button class="add" onclick="add();">Add</button>
             <div class="show"></div>
             
-             
+             <!-- array are references -->
          
 <script>
     const myarray=[];
@@ -25,6 +25,10 @@
         }
     function render(){
         let todolisthtml='';
+        myarray.forEach(function(todobject,index){
+
+            
+        })
         for (let i=0;i<myarray.length;i++){
                 const todo=myarray[i];
                 const html=`<p>${todo}</p>`;

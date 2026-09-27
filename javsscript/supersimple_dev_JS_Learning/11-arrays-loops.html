@@ -20,7 +20,7 @@
     // push==append in python
     myarray.push(100);
     console.log(myarray)
-    // splice(index,number of values we want to remove)=remove element in the array
+    // splice(index,number of values we want to remove)=remove element in the array.(last not included)
     myarray.splice(0,2);
     console.log(myarray);
     let i=1;
@@ -38,6 +38,11 @@
 
     }
     console.log(randomnumber);
+    const arr2=myarray;//both pointing to same array in memory to avoid this we can create copy of array 
+    // array are references in js
+    const arr3=arr2.slice();//copy of array
+    const [firstvalue,secondvalue]=['1',2,3];
+    console.log(firstvalue,secondvalue);    
     
 
 </script>
